@@ -42,7 +42,13 @@ const questions = [
         type: 'input',
         name: 'tests',
         message: 'Write tests for your application and provide examples on how to run them',
+    },
+    {
+        type: 'input',
+        name: 'questions',
+        message: 'Add any questions you may want other devlopers to examine while exploring your project',
     }
+
 ];
 
 // TODO: Create a function to write README file
@@ -58,7 +64,7 @@ function init() {
     console.log("Init Function Executed")
     inquirer.prompt(questions).then(data=> {
         let readme_html =generateMarkdown(data)
-        writeToFile("demo1.md", readme_html)
+        writeToFile("demo3.md", readme_html)
     })
 }
 

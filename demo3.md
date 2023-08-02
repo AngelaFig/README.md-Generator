@@ -1,6 +1,7 @@
-# yes
+# no
  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-  ## Description yes
+  ## Description 
+  no
   
   Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
   
@@ -16,27 +17,27 @@
   - [Installation](#installation)
   - [Usage](#usage)
   - [Credits](#credits)
-  - [License](#license)
+  - [License](#license) 
   
   ## Installation 
-  yes
+  no
   
   What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
   
   ## Usage 
-  yes
+  no
   
   Provide instructions and examples for use. Include screenshots as needed.
   
   ![alt text](assets/images/screenshot.png)
  
-  ## License MIT
+  ## License 
+  MIT
   
   The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
   
   ---
   
-  🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
   
   ## Badges
   
@@ -53,4 +54,5 @@
   Go the extra mile and write tests for your application. Then provide examples on how to run them here.
 
   ## Questions
+  no
   

@@ -14,17 +14,38 @@ function renderLicenseBadge(license) {
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+function renderLicenseLink(license) {
+  if(license === 'MIT'){
+    return`(https://opensource.org/licenses/MIT`
+  }else if(license === 'Apache'){
+    return `(https://opensource.org/licenses/Apache-2.0)`
+  }else if(license === 'Boost'){
+  return `(https://www.boost.org/LICENSE_1_0.txt)`
+  }else if(license === 'None'){
+    return ''
+  }
+  }
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
+function renderLicenseSection(license) {
+  if(license === 'MIT'){
+    return `This License is provided by MIT`
+  }else if(license === 'Apache'){
+    return `This License is provided by Apache`
+  }else if(license === 'Boost'){
+    return  `This License is provided by Boost`
+  }else if(license ==='None'){
+    return ''
+  }
+}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
  ${renderLicenseBadge(data.license)}
-  ## Description ${data.description}
+  ## Description 
+  ${data.description}
   
   Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
   
@@ -40,7 +61,7 @@ function generateMarkdown(data) {
   - [Installation](#installation)
   - [Usage](#usage)
   - [Credits](#credits)
-  - [License](#license)
+  - [License](#license) 
   
   ## Installation 
   ${data.installation}
@@ -54,13 +75,13 @@ function generateMarkdown(data) {
   
   ![alt text](assets/images/screenshot.png)
  
-  ## License ${data.license}
+  ## License 
+  ${data.license}
   
   The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
   
   ---
   
-  🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
   
   ## Badges
   
@@ -77,6 +98,7 @@ function generateMarkdown(data) {
   Go the extra mile and write tests for your application. Then provide examples on how to run them here.
 
   ## Questions
+  ${data.questions}
   
 `;
 }
