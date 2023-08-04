@@ -64,7 +64,7 @@ function init() {
     console.log("Init Function Executed")
     inquirer.prompt(questions).then(data=> {
         let readme_html =generateMarkdown(data)
-        writeToFile("README.md", readme_html)
+        writeToFile("sample.md", readme_html)
     })
 }
 
